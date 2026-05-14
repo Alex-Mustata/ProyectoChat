@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectochat.cliente.PrimaryController">
+   <children>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="8.0" prefHeight="72.0" prefWidth="329.0" text="¡Bienvenido al chat!" textAlignment="CENTER">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      
+      <ScrollPane layoutX="92.0" layoutY="136.0" prefHeight="276.0" prefWidth="506.0">
+         <content>
+            <VBox fx:id="chat" prefHeight="274.0" prefWidth="488.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="caja_mensaje" layoutX="92.0" layoutY="437.0" prefHeight="26.0" prefWidth="416.0" promptText="Escriba su mensaje aquí..." />
+      <Button fx:id="btn_mensaje" layoutX="529.0" layoutY="434.0" mnemonicParsing="false" text="Enviar">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
